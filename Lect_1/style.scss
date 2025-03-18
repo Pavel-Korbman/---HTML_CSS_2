@@ -1,0 +1,40 @@
+$colorSelectSite: #F16D7F;
+$widthSite: 1140px;
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - $widthSite /2);
+    padding-right: calc(50% - $widthSite /2);
+}
+
+.header {
+    height: 40px;
+    width: $widthSite;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.top-head-heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorSelectSite;
+}
+
+.bread-crumbs__link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.bread-crumbs__link__site {
+    font-weight: 700;
+    color: $colorSelectSite;
+}
