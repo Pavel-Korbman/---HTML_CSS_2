@@ -1,3 +1,7 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -8,10 +12,24 @@ a {
 }
 
 .header {
-  height: 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   width: 1140px;
-  background-color: gray;
+  background-color: rgb(34, 34, 36);
+}
+
+.header__left {
   display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.top-head {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #F8F3F4;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
