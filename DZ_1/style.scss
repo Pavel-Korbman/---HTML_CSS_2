@@ -1,3 +1,6 @@
+@import 'vars';
+// @import 'mixins';
+
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +20,8 @@ body {
 }
 
 .center {
-    padding-left: calc(50vw - 570px);
-    padding-right: calc(50vw - 570px);
+    padding-left: calc(50vw - $widthSite/2);
+    padding-right: calc(50vw - $widthSite/2);
 }
 
 li {
@@ -65,7 +68,7 @@ li {
 }
 
 .burger__button:hover path {
-    fill: #f16d7f;
+    fill: $colorSelectSite;
 }
 
 .burger__button:hover nav {
@@ -94,7 +97,7 @@ li {
 .burger__subtitle {
     font-weight: 400;
     font-size: 14px;
-    color: #f16d7f;
+    color: $colorSelectSite;
     padding-left: 33px;
     padding-bottom: 14px;
     padding-top: 30px;
@@ -116,7 +119,7 @@ li {
 .type__block {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: $gapGreed;
     justify-content: center;
 }
 
@@ -162,7 +165,7 @@ li {
 .type__item__text-1 {
     font-size: 24px;
     font-weight: 700;
-    color: #F16D7F;
+    color: $colorSelectSite;
     text-align: center;
 }
 
@@ -178,7 +181,7 @@ li {
 .goods {
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    gap: 30px;
+    gap: $gapGreed;
     justify-content: center;
 }
 
@@ -245,7 +248,7 @@ h3 {
 h4 {
     font-weight: 400;
     font-size: 16px;
-    color: #f16d7f;
+    color: $colorSelectSite;
     margin-top: 20px;
     margin-left: 18px;
     margin-bottom: 24px;
@@ -259,15 +262,15 @@ h4 {
 }
 
 .button {
-    border: 1px solid #f26376;
+    border: 1px solid $colorSelectSite;
     font-weight: 400;
     font-size: 16px;
-    color: #f26376;
+    color: $colorSelectSite;
     padding: 16px 40px;
 }
 
 .button:hover {
-    background-color: #f26376;
+    background-color: $colorSelectSite;
     color: #FFFFFF;
 }
 
@@ -276,7 +279,7 @@ h4 {
     background-color: #222224;
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    gap: 30px;
+    gap: $gapGreed;
     justify-content: center;
     align-items: center;
 }
@@ -290,7 +293,7 @@ h4 {
 }
 
 .promo__block__item:hover {
-    color: #f16d7f;
+    color: $colorSelectSite;
 }
 
 .promo__block__item__title {
@@ -374,7 +377,7 @@ h4 {
 .form__button {
     width: 100px;
     height: 49px;
-    background-color: #F16D7F;
+    background-color: $colorSelectSite;
     border-radius: 0 24px 24px 0;
     border: none;
     font-weight: 400;
@@ -385,8 +388,8 @@ h4 {
 }
 
 .form__button:hover {
-    border: solid 1px #F16D7F;
-    color: #F16D7F;
+    border: solid 1px $colorSelectSite;
+    color: $colorSelectSite;
     background-color: #fff;
 }
 
@@ -419,7 +422,7 @@ h4 {
 }
 
 .footer__icon:hover {
-    background-color: #f16d7f;
+    background-color: $colorSelectSite;
 }
 
 .footer__icon:hover path {

@@ -158,7 +158,7 @@ li {
 .type__item__text-1 {
   font-size: 24px;
   font-weight: 700;
-  color: #F16D7F;
+  color: #f16d7f;
   text-align: center;
 }
 
@@ -253,15 +253,15 @@ h4 {
 }
 
 .button {
-  border: 1px solid #f26376;
+  border: 1px solid #f16d7f;
   font-weight: 400;
   font-size: 16px;
-  color: #f26376;
+  color: #f16d7f;
   padding: 16px 40px;
 }
 
 .button:hover {
-  background-color: #f26376;
+  background-color: #f16d7f;
   color: #FFFFFF;
 }
 
@@ -367,7 +367,7 @@ h4 {
 .form__button {
   width: 100px;
   height: 49px;
-  background-color: #F16D7F;
+  background-color: #f16d7f;
   border-radius: 0 24px 24px 0;
   border: none;
   font-weight: 400;
@@ -378,8 +378,8 @@ h4 {
 }
 
 .form__button:hover {
-  border: solid 1px #F16D7F;
-  color: #F16D7F;
+  border: solid 1px #f16d7f;
+  color: #f16d7f;
   background-color: #fff;
 }
 
