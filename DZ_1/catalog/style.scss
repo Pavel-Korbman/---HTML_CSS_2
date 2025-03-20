@@ -1,0 +1,118 @@
+@import 'vars';
+@import 'mixins';
+
+body {
+    font-family: "Lato",
+        sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - $widthSite /2);
+    padding-right: calc(50% - $widthSite /2);
+}
+
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: $widthSite;
+    background-color: $backBlock;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.top-head {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #F8F3F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.top-head-heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorSelectSite;
+}
+
+.bread-crumbs__link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.bread-crumbs__link__site {
+    font-weight: 700;
+    color: $colorSelectSite;
+}
+
+.product__box {
+    margin-top: 67px;
+    @include centerFlex(); // Используем миксин
+}
+
+%column {
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    width: $thirdWidthSite;
+    // display: flex;
+    // flex-direction: column;
+    @extend %column; // использую наследование
+
+    &__image {
+        width: 100%;
+    }
+
+    &__content {
+        background-color: #f8f8f8;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    //  вместо .product__content
+    &__name {
+        color: $blackText;
+        font-weight: 400;
+        font-size: 13px;
+
+    }
+
+    &__text {
+        color: $grayText;
+        font-weight: 300;
+        font-size: 14px;
+
+    }
+
+    &__prise {
+        color: $colorSelectSite;
+        font-weight: 400;
+        font-size: 16px;
+
+    }
+
+}
