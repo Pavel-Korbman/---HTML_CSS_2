@@ -1,11 +1,14 @@
-$colorSelectSite: #F16D7F;
-$widthSite: 1140px;
-$backBlock: rgba(34, 34, 36, 1);
-;
-
+@import 'vars';
+@import 'mixins';
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato",
+        sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -60,4 +63,56 @@ a {
 .bread-crumbs__link__site {
     font-weight: 700;
     color: $colorSelectSite;
+}
+
+.product__box {
+    margin-top: 67px;
+    @include centerFlex(); // Используем миксин
+}
+
+%column {
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    width: $thirdWidthSite;
+    // display: flex;
+    // flex-direction: column;
+    @extend %column; // использую наследование
+
+    &__image {
+        width: 100%;
+    }
+
+    &__content {
+        background-color: #f8f8f8;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    //  вместо .product__content
+    &__name {
+        color: $blackText;
+        font-weight: 400;
+        font-size: 13px;
+
+    }
+
+    &__text {
+        color: $grayText;
+        font-weight: 300;
+        font-size: 14px;
+
+    }
+
+    &__prise {
+        color: $colorSelectSite;
+        font-weight: 400;
+        font-size: 16px;
+
+    }
+
 }

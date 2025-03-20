@@ -2,6 +2,11 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -38,7 +43,7 @@ a {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  color: #F16D7F;
+  color: rgb(241, 109, 127);
 }
 
 .bread-crumbs__link {
@@ -51,5 +56,47 @@ a {
 
 .bread-crumbs__link__site {
   font-weight: 700;
-  color: #F16D7F;
+  color: rgb(241, 109, 127);
+}
+
+.product__box {
+  margin-top: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  width: 360px;
+}
+.product__image {
+  width: 100%;
+}
+.product__content {
+  background-color: #f8f8f8;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.product__name {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 13px;
+}
+.product__text {
+  color: rgb(93, 93, 93);
+  font-weight: 300;
+  font-size: 14px;
+}
+.product__prise {
+  color: rgb(241, 109, 127);
+  font-weight: 400;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
