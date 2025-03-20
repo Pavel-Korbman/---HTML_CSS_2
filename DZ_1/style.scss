@@ -40,7 +40,7 @@ li {
 
 .header {
     height: 75px;
-    background-color: #222222;
+    background-color: $backBlock;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,7 +78,7 @@ li {
 .burger__menu {
     width: 232px;
     height: 634px;
-    background-color: #fff;
+    background-color: $witeBack;
     box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
     position: absolute;
     top: 76px;
@@ -89,7 +89,7 @@ li {
 .burger__title {
     font-weight: 700;
     font-size: 14px;
-    color: #000;
+    color: $blackText;
     padding-left: 33px;
     padding-top: 36px;
 }
@@ -106,7 +106,7 @@ li {
 .burger__text {
     font-weight: 400;
     font-size: 14px;
-    color: #6f6e6e;
+    color: $grayText;
     padding-left: 54px;
 }
 
@@ -158,7 +158,7 @@ li {
 .type__item__text {
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: $witeBack;
     text-align: center;
 }
 
@@ -180,13 +180,13 @@ li {
 
 .goods {
     display: grid;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: repeat(3, $thirdWidthSite);
     gap: $gapGreed;
     justify-content: center;
 }
 
 .item {
-    background-color: #f8f8f8;
+    background-color: $cardBack;
 }
 
 .item:hover img {
@@ -208,7 +208,7 @@ p {
     max-width: 324px;
     font-weight: 400;
     font-size: 14px;
-    color: #5d5d5d;
+    color: $grayText;
     margin-top: 20px;
     margin-left: 18px;
 }
@@ -217,7 +217,7 @@ p {
 h1 {
     font-weight: 400;
     font-size: 30px;
-    color: #222;
+    color: $backBlock;
 }
 
 h5 {
@@ -230,7 +230,7 @@ h3 {
     max-width: 324px;
     font-weight: 400;
     font-size: 13px;
-    color: #000;
+    color: $blackText;
     margin-top: 24px;
     margin-left: 18px;
 }
@@ -239,7 +239,7 @@ h3 {
     max-width: 324px;
     font-weight: 400;
     font-size: 14px;
-    color: #5d5d5d;
+    color: $grayText;
     margin-top: 20px;
     margin-left: 18px;
 }
@@ -271,12 +271,12 @@ h4 {
 
 .button:hover {
     background-color: $colorSelectSite;
-    color: #FFFFFF;
+    color: $witeBack;
 }
 
 .promo__block {
     height: 341px;
-    background-color: #222224;
+    background-color: $backBlock;
     display: grid;
     grid-template-columns: repeat(3, 360px);
     gap: $gapGreed;
@@ -330,7 +330,7 @@ h4 {
     margin: 0;
     font-weight: 400;
     font-size: 20px;
-    color: #222224;
+    color: $backBlock;
 }
 
 .forma {
@@ -349,14 +349,14 @@ h4 {
     font-weight: 700;
     font-size: 24px;
     line-height: 167%;
-    color: #222224;
+    color: $backBlock;
 }
 
 .title__forma__norm {
     font-weight: 400;
     font-size: 18px;
     width: 356px;
-    color: #222224;
+    color: $backBlock;
 
 }
 
@@ -370,7 +370,7 @@ h4 {
     border: none;
     font-weight: 400;
     font-size: 14px;
-    color: #222224;
+    color: $backBlock;
     position: relative;
 }
 
@@ -383,19 +383,19 @@ h4 {
     font-weight: 400;
     font-size: 14px;
     text-align: center;
-    color: #fff;
+    color: $witeBack;
     position: absolute;
 }
 
 .form__button:hover {
     border: solid 1px $colorSelectSite;
     color: $colorSelectSite;
-    background-color: #fff;
+    background-color: $witeBack;
 }
 
 .footer {
     height: 79px;
-    background-color: #222224;
+    background-color: $backBlock;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -415,7 +415,7 @@ h4 {
 .footer__icon {
     width: 32px;
     height: 32px;
-    background-color: #FFFFFF;
+    background-color: $witeBack;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -426,7 +426,7 @@ h4 {
 }
 
 .footer__icon:hover path {
-    fill: #FFFFFF;
+    fill: $witeBack;
 }
 
 .off {
