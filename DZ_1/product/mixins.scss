@@ -1,0 +1,6 @@
+@mixin goodsGreed(){
+    display: grid;
+    grid-template-columns: repeat(3, $thirdWidthSite);
+    gap: $gapGreed;
+    justify-content: center;
+}
