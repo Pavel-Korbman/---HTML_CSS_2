@@ -4,7 +4,6 @@
 
 @import 'mixins';
 
-
 .top-head {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -37,6 +36,58 @@
     color: $colorSelectSite;
 }
 
+.selection-panel {
+    font-size: 14px;
+    margin-top: 55px;
+    margin-bottom: 62px;
+    display: flex;
+
+    &__filtr {
+        font-weight: 600;
+        color: $blackText;
+        margin-right: 320px;
+
+        &__icon {
+            padding-left: 11px;
+        }
+    }
+
+    &__selector {
+        font-weight: 400;
+        color: $grayText;
+        display: flex;
+
+        &__item {
+            margin-right: 48px;
+
+            &__icon {
+                padding-left: 9px;
+                padding-bottom: 2px;
+            }
+
+            &__menu {
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 30px;
+                background-color: $witeBack;
+                box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+
+                &__punkt {}
+
+            }
+        }
+    }
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
 .product__box {
     margin-top: 67px;
     margin-bottom: 48px;
@@ -50,9 +101,7 @@
 
 .product {
     width: $thirdWidthSite;
-    // display: flex;
-    // flex-direction: column;
-    @extend %column; // использую наследование
+    @extend %column;
 
     &__image {
         width: 100%;
@@ -66,7 +115,7 @@
         gap: 16px;
     }
 
-    //  вместо .product__content
+
     &__name {
         color: $blackText;
         font-weight: 400;
