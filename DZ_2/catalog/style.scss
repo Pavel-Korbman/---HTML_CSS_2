@@ -4,6 +4,10 @@
 
 @import 'mixins';
 
+.forv{
+    z-index: 1000;
+}
+
 .top-head {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -41,14 +45,56 @@
     margin-top: 55px;
     margin-bottom: 62px;
     display: flex;
+    justify-content: space-between;
+    
+    &__filtr-btn {
+        // margin-right: 320px;
+        display: flex;
+        position: relative;
+    }   
 
     &__filtr {
+        // display: flex;
+        display: none;
         font-weight: 600;
         color: $blackText;
         margin-right: 320px;
-
+        position: absolute;
         &__icon {
-            padding-left: 11px;
+            padding-left: 10px;
+        }
+
+        &__title {
+            color: $colorSelectSite;
+            fill: $colorSelectSite;
+        }
+
+        &__menu {
+            // position: absolute;
+            // top: -10px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            padding-left: 18px;
+            padding-top: 48px;
+            padding-bottom: 18px;
+            width: 360px;
+            background-color: $witeBack;
+            box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+
+            &__punkt {
+                &__title {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                &__item {
+                    color: $grayText;
+                    padding-left: 18px;
+                    padding-bottom: 18px;
+                }
+            }
         }
     }
 
@@ -59,6 +105,11 @@
 
         &__item {
             margin-right: 48px;
+            position: relative;
+
+            &__title {
+                margin-bottom: 10px;
+            }
 
             &__icon {
                 padding-left: 9px;
@@ -66,6 +117,8 @@
             }
 
             &__menu {
+                position: relative;
+                left: -9px;
                 padding-left: 10px;
                 padding-top: 10px;
                 padding-bottom: 10px;
@@ -73,11 +126,17 @@
                 background-color: $witeBack;
                 box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
 
-                &__punkt {}
+                &__punkt {
+                    margin-right: 10px;
+                }
 
             }
         }
     }
+}
+
+.selection-panel__filtr-btn:hover  .selection-panel__filtr{
+display: flex;
 }
 
 summary {
