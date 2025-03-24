@@ -263,10 +263,6 @@ li {
   fill: #fff;
 }
 
-.forv {
-  z-index: 1000;
-}
-
 .top-head {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -307,6 +303,10 @@ li {
 .selection-panel__filtr-btn {
   display: flex;
   position: relative;
+}
+.selection-panel__filtr-btn__icon {
+  padding-left: 10px;
+  padding-top: 3px;
 }
 .selection-panel__filtr {
   display: none;
@@ -428,8 +428,27 @@ summary::-webkit-details-marker {
   font-size: 16px;
 }
 
-.off {
-  display: none;
+.catalog__pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 96px;
+}
+.catalog__pagination__box {
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  padding: 16px 16px;
+  display: flex;
+  gap: 18px;
+}
+.catalog__pagination__box__numbers {
+  display: flex;
+  gap: 24px;
+}
+.catalog__pagination__box__numbers__item__active {
+  color: #f16d7f;
+}
+.catalog__pagination__box__numbers__item {
+  color: #C4C4C4;
 }
 
 .mobyle__on {

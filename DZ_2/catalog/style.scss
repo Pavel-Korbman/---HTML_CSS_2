@@ -4,10 +4,6 @@
 
 @import 'mixins';
 
-.forv{
-    z-index: 1000;
-}
-
 .top-head {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -46,12 +42,16 @@
     margin-bottom: 62px;
     display: flex;
     justify-content: space-between;
-    
+
     &__filtr-btn {
         // margin-right: 320px;
         display: flex;
         position: relative;
-    }   
+        &__icon {
+            padding-left: 10px;
+            padding-top: 3px;
+        }
+    }
 
     &__filtr {
         // display: flex;
@@ -60,6 +60,7 @@
         color: $blackText;
         margin-right: 320px;
         position: absolute;
+
         &__icon {
             padding-left: 10px;
         }
@@ -135,8 +136,8 @@
     }
 }
 
-.selection-panel__filtr-btn:hover  .selection-panel__filtr{
-display: flex;
+.selection-panel__filtr-btn:hover .selection-panel__filtr {
+    display: flex;
 }
 
 summary {
@@ -198,14 +199,41 @@ summary::-webkit-details-marker {
 
 }
 
+.catalog__pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 96px;
+
+    &__box {
+        border: 1px solid #ebebeb;
+        border-radius: 3px;
+        padding: 16px 16px;
+        display: flex;
+        gap: 18px;
+
+        &__numbers {
+            display: flex;
+            gap: 24px;
+
+            &__item__active {
+                color: $colorSelectSite;
+            }
+
+            &__item {
+                color: #C4C4C4;
+            }
+        }
 
 
+    }
 
 
-
-.off {
-    display: none;
 }
+
+
+
+
+
 
 .mobyle__on {
     display: none;
