@@ -38,7 +38,7 @@
     margin-top: 55px;
     margin-bottom: 62px;
     display: flex;
-
+    justify-content: flex-start;
     &__filtr-btn {
         margin-left: 10px;
         display: flex;
@@ -53,7 +53,6 @@
     &__filtr {
         font-weight: 600;
         color: $blackText;
-        margin-right: 320px;
         position: absolute;
         left: - $leftPadding;
         top: - $leftPadding;
@@ -100,7 +99,7 @@
         font-weight: 400;
         color: $grayText;
         display: flex;
-        margin-left: 320px;
+        margin-left: $thirdWidthSite - 51px;
 
         &__item {
             margin-right: 48px;

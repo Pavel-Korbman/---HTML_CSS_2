@@ -298,6 +298,7 @@ li {
   margin-top: 55px;
   margin-bottom: 62px;
   display: flex;
+  justify-content: flex-start;
 }
 .selection-panel__filtr-btn {
   margin-left: 10px;
@@ -311,7 +312,6 @@ li {
 .selection-panel__filtr {
   font-weight: 600;
   color: #000;
-  margin-right: 320px;
   position: absolute;
   left: -18px;
   top: -18px;
@@ -350,7 +350,7 @@ li {
   font-weight: 400;
   color: #6f6e6e;
   display: flex;
-  margin-left: 320px;
+  margin-left: 309px;
 }
 .selection-panel__selector__item {
   margin-right: 48px;
