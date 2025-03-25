@@ -298,7 +298,6 @@ li {
   margin-top: 55px;
   margin-bottom: 62px;
   display: flex;
-  justify-content: space-between;
 }
 .selection-panel__filtr-btn {
   margin-left: 10px;
@@ -338,17 +337,20 @@ li {
 .selection-panel__filtr__menu__punkt__title {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 18px;
+  font-size: 14px;
+  color: #6f6e6e;
 }
 .selection-panel__filtr__menu__punkt__item {
   color: #6f6e6e;
   padding-left: 18px;
-  padding-bottom: 18px;
+  padding-top: 18px;
 }
 .selection-panel__selector {
   font-weight: 400;
   color: #6f6e6e;
   display: flex;
+  margin-left: 320px;
 }
 .selection-panel__selector__item {
   margin-right: 48px;
@@ -364,12 +366,14 @@ li {
 .selection-panel__selector__item__menu {
   position: relative;
   left: -9px;
-  padding-left: 10px;
+  padding-left: 9px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 30px;
+  width: 100px;
   background-color: #fff;
   box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+  position: absolute;
+  left: -9px;
 }
 .selection-panel__selector__item__menu__punkt {
   margin-right: 10px;

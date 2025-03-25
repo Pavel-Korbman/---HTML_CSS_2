@@ -1,7 +1,6 @@
 @import 'vars';
 @import 'header';
 @import 'footer';
-
 @import 'mixins';
 
 .top-head {
@@ -12,8 +11,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 .top-head-heading {
     font-style: normal;
@@ -41,12 +38,11 @@
     margin-top: 55px;
     margin-bottom: 62px;
     display: flex;
-    justify-content: space-between;
 
     &__filtr-btn {
-       margin-left:10px;
+        margin-left: 10px;
         display: flex;
-        position: relative; 
+        position: relative;
 
         &__icon {
             padding-left: 10px;
@@ -86,13 +82,15 @@
                 &__title {
                     display: flex;
                     align-items: center;
-                    gap: 10px;
+                    gap: 18px;
+                    font-size: 14px;
+                    color: $grayText;                 
                 }
 
                 &__item {
                     color: $grayText;
                     padding-left: $leftPadding;
-                    padding-bottom: $leftPadding;
+                    padding-top: $leftPadding;                  
                 }
             }
         }
@@ -102,6 +100,7 @@
         font-weight: 400;
         color: $grayText;
         display: flex;
+        margin-left: 320px;
 
         &__item {
             margin-right: 48px;
@@ -109,22 +108,26 @@
 
             &__title {
                 margin-bottom: 10px;
+
             }
 
             &__icon {
                 padding-left: 9px;
                 padding-bottom: 2px;
+
             }
 
             &__menu {
                 position: relative;
                 left: -9px;
-                padding-left: 10px;
+                padding-left: 9px;
                 padding-top: 10px;
                 padding-bottom: 10px;
-                padding-right: 30px;
+                width: 100px;                
                 background-color: $witeBack;
                 box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+                position: absolute;
+                left: -9px;
 
                 &__punkt {
                     margin-right: 10px;
@@ -147,6 +150,7 @@ details[open]>summary {
     position: relative;
     z-index: 1000;
     color: $colorSelectSite;
+
     path {
         fill: $colorSelectSite;
     }
@@ -227,16 +231,8 @@ details[open]>summary {
                 color: #C4C4C4;
             }
         }
-
-
     }
-
-
 }
-
-
-
-
 
 
 .mobyle__on {
