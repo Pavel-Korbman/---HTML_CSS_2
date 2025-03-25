@@ -44,9 +44,10 @@
     justify-content: space-between;
 
     &__filtr-btn {
-        // margin-right: 320px;
+       margin-left:10px;
         display: flex;
-        position: relative;
+        position: relative; 
+
         &__icon {
             padding-left: 10px;
             padding-top: 3px;
@@ -54,12 +55,12 @@
     }
 
     &__filtr {
-        // display: flex;
-        display: none;
         font-weight: 600;
         color: $blackText;
         margin-right: 320px;
         position: absolute;
+        left: - $leftPadding;
+        top: - $leftPadding;
 
         &__icon {
             padding-left: 10px;
@@ -71,15 +72,13 @@
         }
 
         &__menu {
-            // position: absolute;
-            // top: -10px;
             display: flex;
             flex-direction: column;
-            gap: 18px;
-            padding-left: 18px;
+            gap: $leftPadding;
+            padding-left: $leftPadding;
             padding-top: 48px;
-            padding-bottom: 18px;
-            width: 360px;
+            padding-bottom: $leftPadding;
+            width: 342px;
             background-color: $witeBack;
             box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
 
@@ -92,8 +91,8 @@
 
                 &__item {
                     color: $grayText;
-                    padding-left: 18px;
-                    padding-bottom: 18px;
+                    padding-left: $leftPadding;
+                    padding-bottom: $leftPadding;
                 }
             }
         }
@@ -136,16 +135,21 @@
     }
 }
 
-.selection-panel__filtr-btn:hover .selection-panel__filtr {
-    display: flex;
-}
-
 summary {
     display: block;
 }
 
 summary::-webkit-details-marker {
     display: none;
+}
+
+details[open]>summary {
+    position: relative;
+    z-index: 1000;
+    color: $colorSelectSite;
+    path {
+        fill: $colorSelectSite;
+    }
 }
 
 .product__box {
@@ -209,7 +213,7 @@ summary::-webkit-details-marker {
         border-radius: 3px;
         padding: 16px 16px;
         display: flex;
-        gap: 18px;
+        gap: $leftPadding;
 
         &__numbers {
             display: flex;
