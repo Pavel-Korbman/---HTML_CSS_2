@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    // color: inherit;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+  }
+
+  html{
+    scroll-behavior: smooth; // Плавная прокрутка на якорь
+  }
+  
+  .center {
+    padding-left: calc(50vw - 570px);
+    padding-right: calc(50vw - 570px);
+  }
+
+.menu {
+    // display: flex;
+    // align-items: center;
+    // &__links{
+    //     display: flex;
+    //     gap: 16px;
+    // }   
+    // color: white;
+    // height: 50px;
+    // background-color: #444;
+    position: sticky;
+    // top: 0; // прикрепили хэдэр к верху видимой области
+    top: 20%;
+    width: 20%;
+    margin-bottom: 10%;
+}
+
+.main {
+    margin-left: 10%;
+}
+
+
+
+.parallax {
+    height: 1000px;
+    background-image: url(8663.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; // эффект параллакса для фото
+}
+
+.content {
+    background-color: #ccc;
+    min-height: 1000px;
+}

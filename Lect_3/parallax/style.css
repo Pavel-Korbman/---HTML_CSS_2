@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.center {
+  padding-left: calc(50vw - 570px);
+  padding-right: calc(50vw - 570px);
+}
+
+.menu {
+  position: sticky;
+  top: 20%;
+  width: 20%;
+  margin-bottom: 10%;
+}
+
+.main {
+  margin-left: 10%;
+}
+
+.parallax {
+  height: 1000px;
+  background-image: url(8663.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content {
+  background-color: #ccc;
+  min-height: 1000px;
+}/*# sourceMappingURL=style.css.map */
