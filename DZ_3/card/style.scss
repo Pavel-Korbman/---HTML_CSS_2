@@ -1,15 +1,7 @@
 @import 'vars';
-@import 'header';
-@import 'footer';
+@import '../header';
+@import '../footer';
 @import 'mixins';
-
-// input[type="checkbox"] {
-//     border: 1px solid #EBEBEB;
-//     -webkit-appearance: none;
-//     -moz-appearance: none;
-//     appearance: none;
-//     width: 13px; height: 13px;    
-// }
 
 .top-head {
     padding-top: 60px;
@@ -29,149 +21,6 @@
     color: $colorSelectSite;
 }
 
-.bread-crumbs__link {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363;
-}
-
-.bread-crumbs__link__site {
-    font-weight: 700;
-    color: $colorSelectSite;
-}
-
-.selection-panel {
-    font-size: 14px;
-    margin-top: 55px;
-    margin-bottom: 62px;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    &__filtr-btn {
-        margin-left: 10px;
-        display: flex;
-        position: relative;
-
-        &__icon {
-            padding-left: 10px;
-            padding-top: 3px;
-        }
-    }
-
-    &__filtr {
-        font-weight: 600;
-        color: $blackText;
-        position: absolute;
-        left: - $leftPadding;
-        top: - $leftPadding;
-
-        &__icon {
-            padding-left: 10px;
-        }
-
-        &__title {
-            color: $colorSelectSite;
-            fill: $colorSelectSite;
-        }
-
-        &__menu {
-            display: flex;
-            flex-direction: column;
-            gap: $leftPadding;
-            padding-left: $leftPadding;
-            padding-top: 48px;
-            padding-bottom: $leftPadding;
-            width: 342px;
-            background-color: $witeBack;
-            box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
-
-            &__punkt {
-                border: 1px solid #EBEBEB;
-                border-top: none;
-                border-right: none;
-                border-left: none;
-                margin-right: 16px;
-                &__title {
-                    display: flex;
-                    align-items: center;
-                    gap: 18px;
-                    font-size: 14px;
-                    color: $grayText;                 
-                }
-
-                &__item {
-                    color: $grayText;
-                    padding-left: $leftPadding;
-                    padding-top: $leftPadding;                  
-                }
-            }
-        }
-    }
-
-    &__selector {
-        font-weight: 400;
-        color: $grayText;
-        display: flex;
-        margin-left: $thirdWidthSite - 51px;
-
-        &__item {
-            margin-right: 48px;
-            position: relative;
-
-            &__title {
-                margin-bottom: 10px;
-
-            }
-
-            &__icon {
-                padding-left: 9px;
-                padding-bottom: 2px;
-
-            }
-
-            &__menu {
-                position: relative;
-                left: -9px;
-                padding-left: 9px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                width: 100px;                
-                background-color: $witeBack;
-                box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
-                position: absolute;
-                left: -9px;
-
-                &__punkt {
-                    
-                    margin-right: 10px;
-                }                
-
-            }
-        }
-    }
-}
-
-
-
-summary {
-    display: block;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
-details[open]>summary {
-    position: relative;
-    z-index: 1000;
-    color: $colorSelectSite;
-
-    path {
-        fill: $colorSelectSite;
-    }
-}
 
 .product__box {
     margin-top: 67px;
@@ -224,32 +73,6 @@ details[open]>summary {
 
 }
 
-.catalog__pagination {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 96px;
-
-    &__box {
-        border: 1px solid #ebebeb;
-        border-radius: 3px;
-        padding: 16px 16px;
-        display: flex;
-        gap: $leftPadding;
-
-        &__numbers {
-            display: flex;
-            gap: 24px;
-
-            &__item__active {
-                color: $colorSelectSite;
-            }
-
-            &__item {
-                color: #C4C4C4;
-            }
-        }
-    }
-}
 
 
 .mobyle__on {
