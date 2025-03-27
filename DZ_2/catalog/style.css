@@ -263,6 +263,15 @@ li {
   fill: #fff;
 }
 
+input[type=checkbox] {
+  border: 1px solid #EBEBEB;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px;
+}
+
 .top-head {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -335,6 +344,13 @@ li {
   width: 342px;
   background-color: #fff;
   box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+}
+.selection-panel__filtr__menu__punkt {
+  border: 1px solid #EBEBEB;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-right: 16px;
 }
 .selection-panel__filtr__menu__punkt__title {
   display: flex;
