@@ -1,0 +1,28 @@
+.item {
+  height: 600px;
+  background-color: grey;
+}
+
+.item1 {
+  -webkit-clip-path: circle(300px at 0px 300px);
+          clip-path: circle(300px at 0px 300px);
+  background-image: url(8663.jpg);
+  background-size: auto;
+}
+
+.item2 {
+  -webkit-clip-path: ellipse(200px 100px at 20% 30%);
+          clip-path: ellipse(200px 100px at 20% 30%);
+}
+
+.item3 {
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background-image: url(8663.jpg);
+  background-size: cover;
+}
+
+.item4 {
+  -webkit-clip-path: polygon(50% 10%, 12% 100%, 30% 40%, 0% 25%);
+          clip-path: polygon(50% 10%, 12% 100%, 30% 40%, 0% 25%);
+}/*# sourceMappingURL=style.css.map */
