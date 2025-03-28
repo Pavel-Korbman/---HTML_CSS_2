@@ -22,18 +22,19 @@
     color: $colorSelectSite;
 }
 
-.card__box {
+.card-box {
+
     margin-bottom: 128px;
 }
 
-.product__box {
+.product-box {
+    width: $cardProductWidth;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .product {
-    width: $cardProductWidth;
     display: flex;
     align-items: flex-start;
     box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
@@ -44,7 +45,6 @@
     }
 
     &__content {
-        // background-color: #f8f8f8;
         margin-left: 32px;
         margin-top: 28px;
         display: flex;
@@ -103,6 +103,20 @@
         margin-left: 52px;
     }
 
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+}
+
+.clear-btn {
+    @include cardButton();
+}
+
+.continue-btn {
+    @include cardButton();
 }
 
 
