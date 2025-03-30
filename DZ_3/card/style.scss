@@ -3,6 +3,8 @@
 @import '../footer';
 @import 'mixins';
 
+
+
 .top-head {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -23,8 +25,10 @@
 }
 
 .card-box {
-
     margin-bottom: 128px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .product-box {
@@ -119,6 +123,97 @@
     @include cardButton();
 }
 
+.order-box {
+    width: $thirdWidthSite;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.order__adress {
+    height: 306px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__title {
+        font-weight: 300;
+        font-size: 16px;
+        color: $backBlock;
+    }
+
+    &__input {
+        height: 45px;
+        border: 1px solid #A4A4A4;
+        padding-left: 18px;
+        padding-right: 18px;
+        outline: none;
+        font-weight: 400;
+        font-size: 13px;
+        color: $backBlock;
+
+    }
+
+    &__input:focus {
+        color: #b1b1b1;
+    }
+
+    &__button {
+        border: 1px solid #A4A4A4;
+        height: 35px;
+        width: 102px;
+        font-weight: 400;
+        font-size: 11px;
+        color: #4a4a4a;
+        background-color: $witeBack;
+    }
+
+}
+
+.proceed {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+    background-color: #F5F3F3;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: right;
+}
+
+.subtotal {
+    margin-right: 34px;
+    font-weight: 400;
+    font-size: 11px;
+    color: #4a4a4a;
+    margin-bottom: 14px;
+
+    &__item {
+        margin-left: 26px;
+    }
+}
+
+.grandtotal {
+    margin-right: 37px;
+    font-weight: 300;
+    font-size: 16px;
+    color: $backBlock;
+
+    &__item {
+        margin-left: 26px;
+        color: $colorSelectSite;
+        font-weight: 700;
+    }
+}
+
+.proseed__button {
+    padding: 15px 40px;
+    background-color: $colorSelectSite;
+    font-weight: 400;
+    font-size: 16px;
+    color: $witeBack;
+    margin-right: 43px;
+}
 
 
 .mobyle__on {
