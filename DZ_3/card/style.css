@@ -379,12 +379,22 @@ li {
   padding: 20px 40px;
 }
 
+.clear-btn:hover {
+  color: #f16d7f;
+  border-color: #f16d7f;
+}
+
 .continue-btn {
   font-weight: 300;
   font-size: 14px;
   color: #000;
   border: 1px solid #A4A4A4;
   padding: 20px 40px;
+}
+
+.continue-btn:hover {
+  color: #f16d7f;
+  border-color: #f16d7f;
 }
 
 .order-box {
@@ -427,16 +437,26 @@ li {
   color: #4a4a4a;
   background-color: #fff;
 }
+.order__adress__button:hover {
+  color: #f16d7f;
+  border-color: #f16d7f;
+}
 
 .proceed {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   gap: 40px;
   background-color: #F5F3F3;
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: right;
+}
+
+.proseed__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .subtotal {
@@ -468,7 +488,12 @@ li {
   font-weight: 400;
   font-size: 16px;
   color: #fff;
-  margin-right: 43px;
+  border: 1px solid #f16d7f;
+}
+
+.proseed__button:hover {
+  background-color: #fff;
+  color: #f16d7f;
 }
 
 .mobyle__on {

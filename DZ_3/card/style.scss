@@ -119,9 +119,17 @@
     @include cardButton();
 }
 
+.clear-btn:hover {
+    @include whiteButtonHoover();
+ }
+
 .continue-btn {
     @include cardButton();
 }
+
+.continue-btn:hover {
+    @include whiteButtonHoover();
+ }
 
 .order-box {
     width: $thirdWidthSite;
@@ -168,17 +176,29 @@
         background-color: $witeBack;
     }
 
+    &__button:hover {
+       @include whiteButtonHoover();
+    }
+
+
 }
 
 .proceed {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     gap: 40px;
     background-color: #F5F3F3;
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: right;
+}
+
+.proseed__text {
+    width: 100%;
+display: flex;
+flex-direction: column;
+// align-items: ;
 }
 
 .subtotal {
@@ -212,7 +232,14 @@
     font-weight: 400;
     font-size: 16px;
     color: $witeBack;
-    margin-right: 43px;
+    border: 1px solid $colorSelectSite;  
+}
+
+.proseed__button:hover {
+    // color: sienna;
+    @include redButtonHoover();
+    // background-color: $colorSelectSite;
+    
 }
 
 

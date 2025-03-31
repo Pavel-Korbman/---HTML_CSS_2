@@ -4,3 +4,13 @@
     gap: $gapGreed;
     justify-content: center;
 }
+
+@mixin redButtonHoover() {
+    background-color: $witeBack;
+    color: $colorSelectSite;
+}
+
+@mixin whiteButtonHoover() {    
+    color: $colorSelectSite;
+    border-color: $colorSelectSite;
+}

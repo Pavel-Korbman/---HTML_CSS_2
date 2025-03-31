@@ -4,7 +4,6 @@
 
 @import 'mixins';
 
-
 .top-head {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -141,6 +140,10 @@
                         margin-left: 9px;
                     }
                 }
+
+                &__item:hover {
+                    color: $colorSelectSite;
+                }
             }
 
             &__btn {
@@ -158,6 +161,13 @@
                 &__icon {
                     padding-left: 24px;
                     padding-right: 24px;
+                }
+            }
+
+            &__btn:hover {
+                @include whiteButtonHoover();
+                path {
+                    fill: $witeBack;
                 }
             }
         }

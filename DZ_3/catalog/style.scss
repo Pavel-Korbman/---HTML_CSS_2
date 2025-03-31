@@ -3,13 +3,9 @@
 @import '../footer';
 @import 'mixins';
 
-// input[type="checkbox"] {
-//     border: 1px solid #EBEBEB;
-//     -webkit-appearance: none;
-//     -moz-appearance: none;
-//     appearance: none;
-//     width: 13px; height: 13px;    
-// }
+summary:hover {
+    color: $colorSelectSite;
+}
 
 .top-head {
     padding-top: 60px;
@@ -49,6 +45,7 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+
     &__filtr-btn {
         margin-left: 10px;
         display: flex;
@@ -93,18 +90,19 @@
                 border-right: none;
                 border-left: none;
                 margin-right: 16px;
+
                 &__title {
                     display: flex;
                     align-items: center;
                     gap: 18px;
                     font-size: 14px;
-                    color: $grayText;                 
+                    color: $grayText;
                 }
 
                 &__item {
                     color: $grayText;
                     padding-left: $leftPadding;
-                    padding-top: $leftPadding;                  
+                    padding-top: $leftPadding;
                 }
             }
         }
@@ -137,16 +135,16 @@
                 padding-left: 9px;
                 padding-top: 10px;
                 padding-bottom: 10px;
-                width: 100px;                
+                width: 100px;
                 background-color: $witeBack;
                 box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
                 position: absolute;
                 left: -9px;
 
                 &__punkt {
-                    
+
                     margin-right: 10px;
-                }                
+                }
 
             }
         }
@@ -228,6 +226,12 @@ details[open]>summary {
     display: flex;
     justify-content: center;
     margin-bottom: 96px;
+
+    &__arrow:hover {
+        path {
+            fill: $colorSelectSite;
+        }
+    }
 
     &__box {
         border: 1px solid #ebebeb;

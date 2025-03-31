@@ -5,6 +5,7 @@
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -259,6 +260,10 @@ li {
   fill: #fff;
 }
 
+summary:hover {
+  color: #f16d7f;
+}
+
 .top-head {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -448,6 +453,9 @@ details[open] > summary path {
   display: flex;
   justify-content: center;
   margin-bottom: 96px;
+}
+.catalog__pagination__arrow:hover path {
+  fill: #f16d7f;
 }
 .catalog__pagination__box {
   border: 1px solid #ebebeb;

@@ -6,4 +6,4 @@ $grayText: #6f6e6e;
 $cardBack: #f8f8f8;
 $witeBack: #fff;
 $gapGreed: 30px;
-$thirdWidthSite: ($widthSite - $gapGreed * 2) / 3;
+$thirdWidthSite: calc(($widthSite - $gapGreed * 2) / 3);
