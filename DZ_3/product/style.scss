@@ -166,6 +166,7 @@
 
             &__btn:hover {
                 @include whiteButtonHoover();
+
                 path {
                     fill: $witeBack;
                 }
@@ -195,6 +196,7 @@
 .product {
     width: $thirdWidthSite;
     @extend %column;
+    position: relative;
 
     &__image {
         width: 100%;
@@ -207,8 +209,7 @@
         flex-direction: column;
         gap: 16px;
     }
-
-    //  вместо .product__content
+    
     &__name {
         color: $blackText;
         font-weight: 400;
@@ -232,10 +233,16 @@
 
 }
 
+.product:hover img {
+    display: inline;
+}
 
-
-
-
+.hoover__on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
 
 .off {
     display: none;

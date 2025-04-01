@@ -179,13 +179,14 @@ details[open]>summary {
 
 %column {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .product {
     width: $thirdWidthSite;
     @extend %column;
-
+    position: relative;
+    
     &__image {
         width: 100%;
     }
@@ -221,6 +222,18 @@ details[open]>summary {
     }
 
 }
+
+.product:hover img {
+    display: inline;
+}
+
+.hoover__on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
 
 .catalog__pagination {
     display: flex;

@@ -435,6 +435,7 @@ li {
 
 .product {
   width: 360px;
+  position: relative;
 }
 .product__image {
   width: 100%;
@@ -460,6 +461,17 @@ li {
   color: #f16d7f;
   font-weight: 400;
   font-size: 16px;
+}
+
+.product:hover img {
+  display: inline;
+}
+
+.hoover__on {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
 }
 
 .off {
