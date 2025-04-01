@@ -378,6 +378,12 @@ li {
   text-align: center;
   margin-left: 20px;
 }
+.product__quantity__item:hover {
+  outline: 1px solid #f16d7f;
+}
+.product__quantity__item:focus {
+  outline: 1px solid #EAEAEA;
+}
 .product__close-icon {
   margin-top: 33px;
   margin-left: 52px;

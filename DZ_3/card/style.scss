@@ -100,6 +100,14 @@
             text-align: center;
             margin-left: 20px;
         }
+
+        &__item:hover {
+            outline: 1px solid $colorSelectSite;
+        }
+
+        &__item:focus {
+            outline: 1px solid #EAEAEA;
+        }
     }
 
     &__close-icon {
