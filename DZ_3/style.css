@@ -22,6 +22,14 @@ summary {
   transition: all 0.3s ease-in-out;
 }
 
+input {
+  transition: all 0.3s ease-in-out;
+}
+
+svg {
+  transition: all 0.3s ease-in-out;
+}
+
 img {
   max-width: 100%;
 }
