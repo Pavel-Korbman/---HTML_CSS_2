@@ -93,6 +93,7 @@ li {
   top: 76px;
   left: -74px;
   display: none;
+  z-index: 100;
 }
 
 .burger__title {
