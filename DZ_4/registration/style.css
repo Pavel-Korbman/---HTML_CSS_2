@@ -345,6 +345,9 @@ label {
   color: #000;
   margin-right: 20px;
 }
+.registration-form__radio_hover:hover {
+  color: #f16d7f;
+}
 .registration-form__button {
   height: 50px;
   width: 167px;

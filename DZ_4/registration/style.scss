@@ -37,7 +37,7 @@ label {
 }
 
 .registration-form {
-    width: $columnSite; 
+    width: $columnSite;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -65,15 +65,17 @@ label {
     }
 
     &__radio {
-        // accent-color: $colorSelectSite;  
         display: flex;
-          gap: 10px;
+        gap: 10px;
         height: 17px;
         font-weight: 300;
         font-size: 11px;
         color: $blackText;
         margin-right: 20px;
-    }
+        &_hover:hover {
+            color: $colorSelectSite;
+        }
+    }    
 
     &__button {
         height: 50px;
