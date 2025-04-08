@@ -3,6 +3,7 @@
 @import '../footer';
 @import 'mixins';
 
+
 .top-head {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -69,10 +70,11 @@ label {
         font-size: 11px;
         color: $blackText;
         margin-right: 20px;
+
         &_hover:hover {
             color: $colorSelectSite;
         }
-    }    
+    }
 
     &__button {
         height: 50px;
@@ -112,7 +114,7 @@ label {
 }
 
 .loyalty-benefit {
-    width: 652px;
+    max-width: 652px;
 
     &__title {
         @include infoText();
@@ -140,7 +142,30 @@ label {
     display: none;
 }
 
-@media (max-width: 1140px) {}
+@media (max-width: 1140px) {
+
+    .registration-box {
+        margin-top: 44px;
+        margin-bottom: 96px;
+    }
+    
+    .loyalty-benefit {
+        width: 354px;
+
+        &__title {
+            font-size: 1rem;
+        }
+
+        &__text {
+            font-size: 1rem;
+        }
+
+        &__points {
+            font-size: 1rem;
+
+        }
+    }
+}
 
 @media (max-width: 736px) {}
 

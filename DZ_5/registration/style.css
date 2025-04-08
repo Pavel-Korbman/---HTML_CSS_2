@@ -31,7 +31,7 @@ svg {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100;
 }
 
 body {
@@ -509,7 +509,7 @@ label {
 }
 
 .loyalty-benefit {
-  width: 652px;
+  max-width: 652px;
 }
 .loyalty-benefit__title {
   font-weight: 300;
@@ -536,4 +536,23 @@ label {
 
 .mobyle__on {
   display: none;
+}
+
+@media (max-width: 1140px) {
+  .registration-box {
+    margin-top: 44px;
+    margin-bottom: 96px;
+  }
+  .loyalty-benefit {
+    width: 354px;
+  }
+  .loyalty-benefit__title {
+    font-size: 1rem;
+  }
+  .loyalty-benefit__text {
+    font-size: 1rem;
+  }
+  .loyalty-benefit__points {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
