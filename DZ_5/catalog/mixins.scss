@@ -1,4 +1,4 @@
-@mixin goodsGreed(){
+@mixin goodsGreed() {
     display: grid;
     grid-template-columns: repeat(3, $thirdWidthSite);
     gap: $gapGreed;
@@ -10,7 +10,7 @@
     color: $colorSelectSite;
 }
 
-@mixin whiteButtonHoover() {    
+@mixin whiteButtonHoover() {
     color: $colorSelectSite;
     border-color: $colorSelectSite;
 }

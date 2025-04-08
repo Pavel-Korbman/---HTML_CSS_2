@@ -44,7 +44,7 @@ summary:hover {
     margin-bottom: 62px;
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 
     &__filtr-btn {
         margin-left: 10px;
@@ -63,6 +63,7 @@ summary:hover {
         position: absolute;
         left: - $leftPadding;
         top: - $leftPadding;
+        z-index: 100;
 
         &__icon {
             padding-left: 10px;
@@ -179,14 +180,14 @@ details[open]>summary {
 
 %column {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .product {
     width: $thirdWidthSite;
     @extend %column;
     position: relative;
-    
+
     &__image {
         width: 100%;
     }
@@ -273,8 +274,39 @@ details[open]>summary {
     display: none;
 }
 
-@media (max-width: 1140px){}
+@media (max-width: 1140px) {
+    .product__box {
+        grid-template-columns: repeat(2, $columnSite);
+        gap: 16px;
+        margin-top: 30px;
+    }
 
-@media (max-width: 736px){}
+    .selection-panel {     
+        justify-content: space-between;
+        margin-top: 28px;
+        margin-bottom: 0;
+        &__filtr-btn {
+            margin-left: 0;   
+        }
+    
+        &__selector {            
+            margin-left: 0;    
+            &__item {
+                margin-right: 0;
+                margin-left: 48px;                
+            }
+        }
+    }
+}
 
-@media (max-width: 374px) {}
+// @media (max-width: 736px) {
+//     .product__box {
+//         grid-template-columns: 360px;
+//     }
+// }
+
+// @media (max-width: 374px) {
+//     .product__box {
+//         grid-template-columns: 320px;
+//     }
+// }

@@ -457,7 +457,6 @@ summary:hover {
   margin-bottom: 62px;
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
 }
 .selection-panel__filtr-btn {
   margin-left: 10px;
@@ -474,6 +473,7 @@ summary:hover {
   position: absolute;
   left: -18px;
   top: -18px;
+  z-index: 100;
 }
 .selection-panel__filtr__icon {
   padding-left: 10px;
@@ -645,4 +645,27 @@ details[open] > summary path {
 
 .mobyle__on {
   display: none;
+}
+
+@media (max-width: 1140px) {
+  .product__box {
+    grid-template-columns: repeat(2, 360px);
+    gap: 16px;
+    margin-top: 30px;
+  }
+  .selection-panel {
+    justify-content: space-between;
+    margin-top: 28px;
+    margin-bottom: 0;
+  }
+  .selection-panel__filtr-btn {
+    margin-left: 0;
+  }
+  .selection-panel__selector {
+    margin-left: 0;
+  }
+  .selection-panel__selector__item {
+    margin-right: 0;
+    margin-left: 48px;
+  }
 }/*# sourceMappingURL=style.css.map */
