@@ -31,7 +31,7 @@ svg {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100;
 }
 
 body {
@@ -540,6 +540,7 @@ summary:hover {
   box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
   position: absolute;
   left: -9px;
+  z-index: 100;
 }
 .selection-panel__selector__item__menu__punkt {
   margin-right: 10px;
