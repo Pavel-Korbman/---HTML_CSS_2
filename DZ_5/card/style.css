@@ -31,7 +31,7 @@ svg {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100;
 }
 
 body {
@@ -532,7 +532,8 @@ li {
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
   margin-top: 33px;
 }
 
@@ -663,4 +664,33 @@ li {
 
 .mobyle__on {
   display: none;
+}
+
+@media (max-width: 1140px) {
+  .top-head {
+    margin-bottom: 60px;
+  }
+  .card-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons {
+    margin-bottom: 70px;
+  }
+  .order-box {
+    width: 734px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .order__adress {
+    width: 360px;
+  }
+  .proceed {
+    width: 360px;
+    margin-bottom: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
