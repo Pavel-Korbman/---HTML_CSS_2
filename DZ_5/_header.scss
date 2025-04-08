@@ -22,7 +22,7 @@ summary {
     transition: all 0.3s ease-in-out;
 }
 
- input {
+input {
     transition: all 0.3s ease-in-out;
 }
 
@@ -64,68 +64,119 @@ li {
     justify-content: space-between;
     align-items: center;
 
+    &__logo {
+        display: flex;
+        gap: 40px;
+        align-items: flex-end;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 33px;
+        align-items: center;
+    }
+
 }
 
-.header__logo {
-    display: flex;
-    gap: 40px;
-    align-items: flex-end;
+.burger {
+    &__button {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__button:hover path {
+        fill: $colorSelectSite;
+    }
+
+    &__button:hover nav {
+        display: block;
+    }
+
+    &__menu {
+        width: 232px;
+        height: 634px;
+        background-color: $witeBack;
+        box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+        position: absolute;
+        top: 76px;
+        left: -74px;
+        display: none;
+        z-index: 100;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        color: $blackText;
+        padding-left: 33px;
+        padding-top: 36px;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        color: $colorSelectSite;
+        padding-left: 33px;
+        padding-bottom: 14px;
+        padding-top: 30px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        color: $grayText;
+        padding-left: 54px;
+    }
 }
 
-.header__buttons {
-    display: flex;
-    gap: 33px;
-    align-items: center;
+@media (max-width: 1140px) {
+
+    .center {
+        padding-left: calc(50vw - 368px);
+        padding-right: calc(50vw - 368px);
+    }
+
+    .header {
+        &__buttons {
+            padding-right: 15px;
+        }
+
+        &__logo {
+            padding-left: 15px;
+        }
+    }
+
+    .burger__menu {
+        left: -64px;
+    }
+
 }
 
+@media (max-width: 736px) {
+    p {
+        max-width: 314px;
+    }
 
-.burger__button {
-    height: 75px;
-    display: flex;
-    align-items: center;
-    position: relative;
+    h3 {
+        max-width: 314px;
+    }
+
+    .center {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    .burger__menu {
+        top: 76px;
+        left: -168px;
+    }
 }
 
-.burger__button:hover path {
-    fill: $colorSelectSite;
-}
-
-.burger__button:hover nav {
-    display: block;
-}
-
-.burger__menu {
-    width: 232px;
-    height: 634px;
-    background-color: $witeBack;
-    box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
-    position: absolute;
-    top: 76px;
-    left: -74px;
-    display: none;
-    z-index: 100;
-}
-
-.burger__title {
-    font-weight: 700;
-    font-size: 14px;
-    color: $blackText;
-    padding-left: 33px;
-    padding-top: 36px;
-}
-
-.burger__subtitle {
-    font-weight: 400;
-    font-size: 14px;
-    color: $colorSelectSite;
-    padding-left: 33px;
-    padding-bottom: 14px;
-    padding-top: 30px;
-}
-
-.burger__text {
-    font-weight: 400;
-    font-size: 14px;
-    color: $grayText;
-    padding-left: 54px;
+@media (max-width: 374px) {
+    .center {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
