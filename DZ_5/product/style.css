@@ -627,7 +627,7 @@ li {
 
 @media (max-width: 1140px) {
   .product__box {
-    grid-template-columns: repeat(2, 360px);
+    grid-template-columns: repeat(auto-fit, 360px);
     gap: 16px;
   }
   .product__cart {

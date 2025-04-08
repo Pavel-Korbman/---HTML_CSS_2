@@ -277,7 +277,7 @@ details[open]>summary {
 
 @media (max-width: 1140px) {
     .product__box {
-        grid-template-columns: repeat(2, $columnSite);
+        grid-template-columns: repeat(auto-fit, $columnSite);
         gap: 16px;
         margin-top: 30px;
     }
