@@ -669,4 +669,42 @@ details[open] > summary path {
     margin-right: 0;
     margin-left: 48px;
   }
+}
+@media (max-width: 736px) {
+  .top-head {
+    padding-top: 24px;
+    padding-bottom: 46px;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .selection-panel__filtr-btn {
+    font-size: 0;
+  }
+  .selection-panel__filtr-btn__icon {
+    width: 37px;
+    height: 25px;
+    padding-left: 0;
+    padding-top: 0px;
+  }
+  .selection-panel__filtr__menu__punkt__item {
+    font-size: 14px;
+  }
+  .selection-panel__selector {
+    margin-left: 0;
+    font-size: 12px;
+  }
+  .selection-panel__selector__item {
+    margin-left: 24px;
+  }
+}
+@media (max-width: 374px) {
+  .selection-panel__selector__item {
+    margin-left: 20px;
+  }
+  .product {
+    max-width: 320px;
+  }
+  .product__box {
+    grid-template-columns: 320px;
+  }
 }/*# sourceMappingURL=style.css.map */
