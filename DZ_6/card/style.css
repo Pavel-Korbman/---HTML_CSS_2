@@ -439,7 +439,6 @@ li {
   margin-bottom: 128px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .product-box {
@@ -543,6 +542,7 @@ li {
   color: #000;
   border: 1px solid #A4A4A4;
   padding: 20px 40px;
+  text-transform: uppercase;
 }
 
 .clear-btn:hover {
@@ -556,6 +556,7 @@ li {
   color: #000;
   border: 1px solid #A4A4A4;
   padding: 20px 40px;
+  text-transform: uppercase;
 }
 
 .continue-btn:hover {
@@ -692,5 +693,109 @@ li {
   .proceed {
     width: 360px;
     margin-bottom: 12px;
+  }
+}
+@media (max-width: 736px) {
+  .card-box {
+    margin-bottom: 100px;
+  }
+  .top-head {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  .product-box {
+    max-width: 360px;
+    gap: 20px;
+  }
+  .product__image {
+    height: 188px;
+  }
+  .product__content {
+    margin-left: 14px;
+    margin-top: 14px;
+  }
+  .product__name {
+    width: 140px;
+    font-size: 1rem;
+    margin-bottom: 26px;
+  }
+  .product__prise {
+    font-size: 14px;
+  }
+  .product__color {
+    font-size: 14px;
+  }
+  .product__size {
+    font-size: 14px;
+  }
+  .product__quantity {
+    font-size: 14px;
+  }
+  .product__quantity__item {
+    width: 24px;
+    height: 15px;
+  }
+  .product__close-icon {
+    width: 10px;
+    height: 10px;
+    margin-top: 18px;
+    margin-left: 16px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 38px;
+  }
+  .clear-btn {
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: none;
+    padding: 0;
+    height: 33px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .continue-btn {
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: none;
+    padding: 0;
+    height: 33px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .order-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 374px) {
+  .product-box {
+    max-width: 320px;
+  }
+  .product__name {
+    width: 120px;
+    font-size: 14px;
+    margin-bottom: 26px;
+  }
+  .product__close-icon {
+    margin-top: 18px;
+    margin-left: 0px;
+  }
+  .order-box {
+    width: 320px;
+  }
+  .order__adress {
+    width: 320px;
+  }
+  .proceed {
+    width: 320px;
   }
 }/*# sourceMappingURL=style.css.map */

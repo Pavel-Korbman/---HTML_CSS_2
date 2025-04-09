@@ -28,7 +28,6 @@
     margin-bottom: 128px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .product-box {
@@ -45,7 +44,6 @@
 
     &__image {
         height: 306px;
-        ;
     }
 
     &__content {
@@ -262,7 +260,7 @@
 @media (max-width: 1140px) {
     .top-head {
         margin-bottom: 60px;
-    } 
+    }
 
     .card-box {
         flex-direction: column;
@@ -280,7 +278,7 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-       gap: 0;
+        gap: 0;
     }
 
     .order__adress {
@@ -290,5 +288,121 @@
     .proceed {
         width: $columnSite;
         margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 736px) {
+.card-box {
+    margin-bottom: 100px;
+}
+
+    .top-head {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    .product-box {
+        max-width: 360px;
+        gap: 20px;
+    }
+
+    .product {
+        &__image {
+            height: 188px;
+        }
+
+        &__content {
+            margin-left: 14px;
+            margin-top: 14px;
+        }
+
+        &__name {
+            width: 140px;
+            font-size: 1rem;
+            margin-bottom: 26px;
+        }
+
+        &__prise {
+            font-size: 14px;
+        }
+
+        &__color {
+            font-size: 14px;
+        }
+
+        &__size {
+            font-size: 14px;
+        }
+
+        &__quantity {
+            font-size: 14px;
+
+            &__item {
+                width: 24px;
+                height: 15px;
+            }
+        }
+
+        &__close-icon {
+            width: 10px;
+            height: 10px;
+            margin-top: 18px;
+            margin-left: 16px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 38px;
+    }
+
+    .clear-btn {
+        @include cardButtonMobile();
+        
+    }
+
+    .continue-btn {
+        @include cardButtonMobile();
+    }
+
+    .order-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 374px) {
+    .product-box {
+        max-width: 320px;        
+    }
+
+    .product {
+        &__name {
+            width: 120px;
+            font-size: 14px;
+            margin-bottom: 26px;
+        }
+
+        &__close-icon {           
+            margin-top: 18px;
+            margin-left: 0px;
+        }
+    }
+
+    .order-box {
+        width: 320px;        
+    }
+
+    .order__adress {
+        width: 320px;        
+    }
+
+    .proceed {
+        width: 320px;
     }
 }
