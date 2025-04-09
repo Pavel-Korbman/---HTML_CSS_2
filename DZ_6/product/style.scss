@@ -36,7 +36,7 @@
     color: $colorSelectSite;
 }
 
-.product__cart {    
+.product__cart {
     padding-bottom: 453px;
     margin-bottom: 190px;
 
@@ -47,11 +47,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         position: relative;
 
         &__foto {
-            width: 597px;
+            max-width: 597px;
         }
 
         &__arrow {
@@ -80,7 +79,7 @@
             background-color: $witeBack;
             // max-width: 1141px;
             border: 1px solid #eaeaea;
-            
+
             @extend %column;
             align-items: center;
 
@@ -107,7 +106,7 @@
 
             &__text {
                 margin-top: 56px;
-                width: 555px;
+                max-width: 555px; //
                 font-weight: 300;
                 font-size: 14px;
                 text-align: center;
@@ -123,7 +122,7 @@
 
             &__gray-line {
                 margin-top: 15px;
-                width: 642px;
+                max-width: 642px;
                 height: 1px;
                 background-color: #eaeaea;
             }
@@ -259,11 +258,12 @@
         gap: 16px;
     }
 
-    .product__cart {    
+    .product__cart {
         padding-bottom: 0;
         margin-bottom: 130px;
+
         &__gallery__foto {
-            width: 466px;
+            max-width: 466px;
         }
 
         &__content {
@@ -274,6 +274,52 @@
     }
 }
 
-@media (max-width: 736px) {}
+@media (max-width: 736px) {
+    .top-head {
+        padding-top: 24px;
+        padding-bottom: 46px;
+        flex-direction: column;
+        gap: 32px;
+    }
 
-@media (max-width: 374px) {}
+    .product__box {
+        margin-bottom: 63px;
+    }   
+
+    .product__cart {
+        margin-bottom: 64px;
+
+        &__gallery__foto {
+            max-width: 300px;
+        }
+
+        &__content {
+            &__box {
+                &__selector {
+                    &__item {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .product__cart {
+
+        &__gallery__foto {
+            max-width: 250px;
+        }
+
+    }
+
+    .product {
+        max-width: 320px;
+    }
+
+    .hoover__on {
+        max-width: 320px;
+    }
+
+}
