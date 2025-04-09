@@ -167,6 +167,19 @@ label {
     }
 }
 
-@media (max-width: 736px) {}
+@media (max-width: 736px) {
+    .top-head {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
 
-@media (max-width: 374px) {}
+    .registration-box {
+        margin-top: 40px;              
+        justify-content: center;        
+    }
+
+    .registration-form {
+       margin-bottom: 40px;
+    }
+}
