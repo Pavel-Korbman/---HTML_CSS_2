@@ -1,0 +1,11 @@
+@mixin goodsGreed() {
+    display: grid;
+    grid-template-columns: repeat(3, $thirdWidthSite);    
+    gap: $gapGreed;
+    justify-content: center;
+}
+
+@mixin whiteButtonHoover() {
+    color: $witeBack;
+    background-color: $colorSelectSite;  
+}

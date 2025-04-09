@@ -1,0 +1,322 @@
+@import 'vars';
+@import 'header';
+@import 'footer';
+
+.title__block {    
+    margin-bottom: 65px;
+    background-color: #f1e4e6;
+}
+
+.type__block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gapGreed;
+    justify-content: center;
+}
+
+.type__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.type__item__bgrd-1 {
+    height: 260px;
+    width: 360px;
+    background-image: url(img/top_banner_women.jpg);
+}
+
+.type__item__bgrd-2 {
+    height: 260px;
+    width: 360px;
+    background-image: url(img/top_banner_men.jpg);
+}
+
+.type__item__bgrd-3 {
+    height: 260px;
+    width: 360px;
+    background-image: url(img/top_banner_kids.jpg);
+}
+
+.type__item__bgrd-4 {
+    height: 180px;
+    width: 1142px;
+    background-image: url(img/top_banner_accesories.jpg);
+}
+
+
+
+.type__item__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: $witeBack;
+    text-align: center;
+}
+
+.type__item__text-1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $colorSelectSite;
+    text-align: center;
+}
+
+.title {
+    padding-top: 104px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.goods {
+    display: grid;
+    grid-template-columns: repeat(3, $thirdWidthSite);
+    gap: $gapGreed;
+    justify-content: center;
+}
+
+.item {
+    background-color: $cardBack;
+}
+
+.item:hover img {
+    display: inline;
+}
+
+.item__foto {
+    position: relative;
+}
+
+.hoover__on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+p {
+    max-width: 324px;
+    font-weight: 400;
+    font-size: 14px;
+    color: $grayText;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+
+
+h1 {
+    font-weight: 400;
+    font-size: 30px;
+    color: $backBlock;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #9f9f9f;
+}
+
+h3 {
+    max-width: 324px;
+    font-weight: 400;
+    font-size: 13px;
+    color: $blackText;
+    margin-top: 24px;
+    margin-left: 18px;
+}
+
+.paragraph-1 {
+    max-width: 324px;
+    font-weight: 400;
+    font-size: 14px;
+    color: $grayText;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+
+
+h4 {
+    font-weight: 400;
+    font-size: 16px;
+    color: $colorSelectSite;
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-bottom: 24px;
+}
+
+.button__block {
+    margin-top: 48px;
+    margin-bottom: 95px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border: 1px solid $colorSelectSite;
+    font-weight: 400;
+    font-size: 16px;
+    color: $colorSelectSite;
+    padding: 16px 40px;
+}
+
+.button:hover {
+    background-color: $colorSelectSite;
+    color: $witeBack;
+}
+
+
+
+.off {
+    display: none;
+}
+
+.mobyle__on {
+    display: none;
+}
+
+@media (max-width: 1140px) {
+
+    .title__block {
+        margin-bottom: 64px;
+    }
+
+    .title__foto {
+        padding-left: 92px;
+    }
+
+    .type__block {
+        gap: 20px;
+    }
+
+    .type__item__bgrd-1 {
+        height: 168px;
+        width: 233px;
+        background-image: url(img/top_banner_women_mini.jpg);
+    }
+
+    .type__item__bgrd-2 {
+        height: 168px;
+        width: 233px;
+        background-image: url(img/top_banner_men_mini.jpg);
+    }
+
+    .type__item__bgrd-3 {
+        height: 168px;
+        width: 233px;
+        background-image: url(img/top_banner_kids_mini.jpg);
+    }
+
+    .type__item__bgrd-4 {
+        height: 118px;
+        width: 735px;
+        background-image: url(img/top_banner_accesories_mini.jpg);
+    }
+
+    .title {
+        padding-top: 117px;
+        padding-bottom: 73px;
+        gap: 13px;
+    }
+
+    .goods {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+    }
+
+    .button__block {
+        margin-top: 33px;
+        margin-bottom: 71px;
+    } 
+
+}
+
+@media (max-width: 736px) {
+
+    .title__block {
+        height: 363px;
+        width: 100vw;
+    }
+
+    .type__block {
+        gap: 32px;
+    }
+
+    .type__item__bgrd-1 {
+        height: 248px;
+        width: 343px;
+        background-image: url(img/top_banner_women.jpg);
+    }
+
+    .type__item__bgrd-2 {
+        height: 248px;
+        width: 343px;
+        background-image: url(img/top_banner_men.jpg);
+    }
+
+    .type__item__bgrd-3 {
+        height: 248px;
+        width: 343px;
+        background-image: url(img/top_banner_kids.jpg);
+    }
+
+    .type__item__bgrd-4 {
+        height: 111px;
+        width: 343px;
+        background-image: url(img/top_banner_accesories.jpg);
+    }
+
+    .title {
+        padding-top: 73px;
+        padding-bottom: 65px;
+        gap: 13px;
+    }
+
+    .goods {
+        grid-template-columns: 360px;
+        gap: 16px;
+    }
+
+    .button__block {
+        margin-top: 41px;
+        margin-bottom: 85px;
+    }  
+}
+
+@media (max-width: 374px) {   
+
+    .title__text {
+        width: 280px;
+        text-align: center;
+    }
+
+    .type__item__bgrd-1 {
+        height: 231px;
+        width: 320px;
+        background-image: url(img/top_banner_women.jpg);
+    }
+
+    .type__item__bgrd-2 {
+        height: 231px;
+        width: 320px;
+        background-image: url(img/top_banner_men.jpg);
+    }
+
+    .type__item__bgrd-3 {
+        height: 231px;
+        width: 320px;
+        background-image: url(img/top_banner_kids.jpg);
+    }
+
+    .type__item__bgrd-4 {
+        height: 103px;
+        width: 320px;
+        background-image: url(img/top_banner_accesories.jpg);
+    }
+
+    .goods {
+        grid-template-columns: 320px;
+        gap: 16px;
+    }  
+
+}
